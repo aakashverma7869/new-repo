@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    width: auto;
+    object-fit: cover;
+}
+h2{
+    font-size:1rem;
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 1;
+    word-spacing: 4px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+i{
+    color:#2fccd0
+}
+
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/back4.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.nav-item a{
+    color: white;
+    font-weight: 700;
+}
+ 
+.scroll-nav{
+    background: rgba(20,20,10,1);
+    transition: 0.5s ease-in-out;
+}
+
+.header-section{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-div p{
+    font-size: 1.32rem;
+    padding: 10px 0;
+    font-weight: 400;
+}
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #222;
+    position: relative;
+
+}
+
+.footer-section p{
+    color: white;
+
+}
+
+.footer-section li a{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color:white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.footer-section h3{
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+
+
+#hdr{
+    color: black;
+    display: flex;
+    flex-direction: column
+}
+#ahdr
+{
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width:768px){
+    .nav-item{
+        text-align: center ;
+    }
+
+}
